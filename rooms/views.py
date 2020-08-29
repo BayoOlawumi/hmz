@@ -10,7 +10,7 @@ from .models import Room, RoomCategory
 
 
 
-class RoomViewSet(viewsets.ReadOnlyModelViewSet):
+class RoomViewSet(viewsets.ModelViewSet):
    
     queryset = Room.objects.all()
     serializer_class = RoomSerializer
