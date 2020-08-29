@@ -29,5 +29,5 @@ class RoomCategorySerializer(ModelSerializer):
             'name',
             'unique_color',
             'max_room_no',
-            'rooms',
         )
+        read_only_fields =['rooms']
