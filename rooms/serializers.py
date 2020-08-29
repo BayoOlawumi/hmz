@@ -22,7 +22,6 @@ class RoomSerializer(ModelSerializer):
 
 class RoomCategorySerializer(ModelSerializer):
 
-    rooms = RoomSerializer(many=True)
     class Meta:
         model = RoomCategory
         fields = (
@@ -30,4 +29,4 @@ class RoomCategorySerializer(ModelSerializer):
             'unique_color',
             'max_room_no',
         )
-        read_only_fields =['rooms']
+       
